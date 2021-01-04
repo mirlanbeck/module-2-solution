@@ -1,0 +1,96 @@
+body {
+    width: 100%; 
+    font-size: medium;
+    font-style: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+    h1 {
+        font-size: 175%; 
+        text-align: center;
+    }
+    div {
+       box-sizing: border-box;  
+        padding:5px 5px 5px 5px; 
+        margin-top: 5px; 
+        margin-left: 10px; 
+        margin-bottom: 5px; 
+        margin-right: 10px; 
+        width: 30%;
+        height: 300px; 
+        float: left; 
+    }
+        .section1 {
+            background-color: gray;
+            border-style: solid;
+            border-width: 1px;
+        }
+        .section2 {
+            background-color: gray;
+            border-style: solid;
+            border-width: 1px;
+        }
+
+        .section3 {
+            background-color: gray;
+            border-style: solid;
+            border-width: 1px;
+        }
+    
+    h2 {
+        width: 99.5px; 
+        background-color: sienna; 
+        border-style: solid; 
+        border-width: 1px; 
+        font-size: 125%; 
+        margin-top: 0px; 
+        text-align: center;
+    }
+
+#columnhead2 {
+    background-color: firebrick;
+}
+
+#columnhead3 {
+    background-color: burlywood;
+}
+
+@media(min-width:992px) {
+    .section1,.section2,.section3 {
+        width: 30%;
+    } 
+    h2 {
+        width:30%; position: relative; left: 200px;
+    }
+}
+
+@media(max-width: 767px)
+    {
+        .section1 {
+            width: 100%;
+        }
+        .section2 {
+            width: 100%;
+        }
+        .section3 {
+            width: 100%;
+        } 
+        h2 {
+        position: relative; left: 75%;
+        }
+    }   
+@media (min-width: 768px) and (max-width: 991px) 
+    {
+        .section1 {
+            width: 47%;
+        }
+        .section2 {
+            float: right; 
+            width: 47%;
+        }
+        .section3 {
+            width: 100%;
+        } 
+        h2 {
+            position: relative; left: 70%;
+        }
+    }
